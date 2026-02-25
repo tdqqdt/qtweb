@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quân Tân Web</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #0b5ed7;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #084298;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .tabs {
+            color: white;
+            display: flex;
+            font-weight: bold;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            justify-content: space-around;
+        }
+
+        .tab {
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .tab:hover {
+            background-color: #01255b;
+        }
+
+        [data-tab-content] {
+            display: none;
+        }
+
+        .active[data-tab-content] {
+            display: block;
+            margin: 25px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .post {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .post h2 {
+            color: #0b5ed7;
+        }
+
+        .date {
+            color: gray;
+            font-size: 14px;
+        }
+
+        footer {
+            background-color: #0b5ed7;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <h1>Xin chào đến với trang web của<br>
+    Trần Đông Quân và Nguyễn Đức Tân</h1>
+    <p>Khám phá những điều thú vị về hai bạn lớp 12C15</p>
+</header>
+
+<nav>
+    <ul class="tabs">
+        <li data-tab-target="#home" active class="tab">Trang chủ</li>
+        <li data-tab-target="#quan" class="tab">Trần Đông Quân</li>
+        <li data-tab-target="#tan" class="tab">Nguyễn Đức Tân</li>
+    </ul>
+</nav>
+<br>
+<div class="tab-content">
+    <!--TRANG CHỦ-->
+    <div id="home" data-tab-content class="active">
+        <img src="TDQ.jpg" width="50%" height="50%" title="Trần Đông Quân">
+        <h1>Trần Đông Quân</h1>
+        <p>
+            <b>Sinh nhật:</b> 20/10/2008<br>
+            Học sinh lớp 12C15.<br>
+            Mình yêu thích chó mèo, động vật và có ước mơ trở thành một lập trình viên.
+        </p>
+        <hr>
+        <h1>Nguyễn Đức Tân</h1>
+        <p>
+            Học sinh lớp 12C15.<br>
+            Xin chào mọi người,<br>
+
+            Mình là Nguyễn Đức Tân, hiện đang là học sinh lớp 12C15. Mình đang ở giai đoạn cuối cấp – một khoảng thời gian vừa áp lực nhưng cũng đầy động lực vì đây là bước đệm quan trọng cho tương lai.<br>
+
+            Mình có niềm yêu thích với các môn tư duy như Toán và đặc biệt quan tâm đến lĩnh vực kỹ thuật – công nghệ. Mình luôn cố gắng rèn luyện khả năng phân tích, giải quyết vấn đề và không ngừng học hỏi những điều mới.<br>
+
+            Ngoài việc học, mình cũng thích tìm hiểu về bóng đá, chiến thuật thi đấu và những câu chuyện truyền cảm hứng từ các cầu thủ hàng đầu thế giới.<br>
+
+            Mục tiêu của mình trong thời gian tới là đỗ vào một trường đại học tốt, theo đuổi ngành kỹ thuật mà mình đam mê và phát triển bản thân từng ngày.<br>
+
+            Rất vui khi được kết nối và chia sẻ cùng mọi người trên blog này!<br>
+
+            — Nguyễn Đức Tân, 12C15
+
+        </p>
+    </div>
+    <!--QUÂN-->
+    <div id="quan" data-tab-content>
+        <div class="container">
+            <div class="post">
+                <h2>Du lịch Vũng Tàu</h2>
+                <p class="date">14/02/2026</p>
+                <p>
+                    Ngày 12/02/2026, mình và gia đình đã đi du lịch Vũng Tàu.<br>
+                    Đây là một số món mình đã thưởng thức ở đó.<br><br>
+                <img src="vt1.jpg" width="30%" height="30%">
+                <img src="vt2.jpg" width="30%" height="30%">
+                <img src="vt3.jpg" width="30%" height="30%">
+                </p>
+            </div>
+            <div class="post">
+                <h2>Coi pháo bông</h2>
+                <p class="date">17/02/2026</p>
+                <p>
+                    Khu phố mình đã bắn rất nhiều pháo bông để mừng ngày Tết.<br><br>
+                    <video src="phao.mp4" controls></video>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--TÂN-->
+    <div id="tan" data-tab-content>
+        <div class="container">
+            <div class="post">
+                <h2>🌸 Mùng 1 – Tết gia đình</h2>
+                <p class="date">17/02/2026</p>
+                <p>
+                    Tết đối với mình không chỉ là dịp nghỉ ngơi sau một năm học vất vả
+                    mà còn là khoảng thời gian ý nghĩa bên gia đình.<br><br>
+                    Mùng 1 mình thường ở nhà với gia đình. Sáng dậy sớm mặc đồ mới, 
+                    chúc Tết ông bà, ba mẹ và nhận lì xì đầu năm. Cả nhà quây quần ăn cơm, nói chuyện về một năm đã qua và chúc nhau những điều tốt đẹp. 
+                    Với mình, mùng 1 là ngày ấm áp nhất vì được ở cạnh những người thân yêu.
+                </p>
+            </div>
+            <div class="post">
+                <h2>🎊 Mùng 2 – Tết họ hàng</h2>
+                <p class="date">18/02/2026</p>
+                <p>
+                    Mùng 2 mình theo ba mẹ đi chúc Tết họ hàng. 
+                    Gặp lại anh chị em họ sau một năm, mọi người hỏi han chuyện học hành, dự định tương lai. 
+                    Là học sinh lớp 12 nên mình cũng được hỏi khá nhiều về thi đại học 😅 nhưng đó cũng là động lực để mình cố gắng hơn.
+                </p>
+            </div>
+            <div class="post">
+                <h2>🎉 Mùng 3 – Tết bạn bè</h2>
+                <p class="date">19/02/2026</p>
+                <p>
+                    Mùng 3 là thời gian dành cho bạn bè. 
+                    Mình thường đi chơi, cà phê hoặc tụ tập đầu năm. 
+                    Cảm giác gặp lại bạn bè sau kỳ nghỉ, 
+                    cùng nhau nói về mục tiêu năm mới rất vui và đầy năng lượng tích cực. <br><br>
+
+                    Tết không chỉ là ăn ngon hay nhận lì xì, 
+                    mà còn là sự đoàn tụ, yêu thương và khởi đầu cho một năm mới nhiều cố gắng. 
+                    Với mình – Nguyễn Đức Tân 12C15 – Tết là động lực để bắt đầu hành trình chinh phục những mục tiêu lớn phía trước.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const tabs = document.querySelectorAll('[data-tab-target]')
+    const tabContents = document.querySelectorAll('[data-tab-content]')
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const target = document.querySelector(tab.dataset.tabTarget)
+            tabContents.forEach(tabContent => {
+                tabContent.classList.remove('active')
+            })
+            target.classList.add('active')
+        })
+    })
+</script>
+
+</body>
+</html>
