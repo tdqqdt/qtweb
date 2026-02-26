@@ -3,84 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Quân Tân Web</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f8;
-        }
-
-        header {
-            background-color: #0b5ed7;
-            color: white;
-            padding: 25px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #084298;
-            padding: 0;
-            margin: 0;
-            text-align: center;
-        }
-
-        .tabs {
-            color: white;
-            display: flex;
-            font-weight: bold;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            justify-content: space-around;
-        }
-
-        .tab {
-            cursor: pointer;
-            padding: 10px;
-        }
-
-        .tab:hover {
-            background-color: #01255b;
-        }
-
-        [data-tab-content] {
-            display: none;
-        }
-
-        .active[data-tab-content] {
-            display: block;
-            margin: 25px;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-        }
-
-        .post {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-        }
-
-        .post h2 {
-            color: #0b5ed7;
-        }
-
-        .date {
-            color: gray;
-            font-size: 14px;
-        }
-
-        footer {
-            background-color: #0b5ed7;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer>
 </head>
 
 <body>
@@ -193,20 +117,6 @@
     </div>
 </div>
 
-<script>
-    const tabs = document.querySelectorAll('[data-tab-target]')
-    const tabContents = document.querySelectorAll('[data-tab-content]')
-
-    tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            const target = document.querySelector(tab.dataset.tabTarget)
-            tabContents.forEach(tabContent => {
-                tabContent.classList.remove('active')
-            })
-            target.classList.add('active')
-        })
-    })
-</script>
-
 </body>
 </html>
+
